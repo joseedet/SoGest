@@ -2,8 +2,7 @@
 
 namespace SoGest.Data.Interaces
 {
-    public interface IProveedorRepository : IGenericRepository<Proveedor>
+    public interface IMedidaRepository : IGenericRepository<Medida>
     {
-
     }
 }

@@ -1,8 +1,7 @@
-﻿using SoGest.Data.Interaces;
-
+﻿
 using System;
 
-namespace SoGest.Data.Model.Entities
+namespace SoGest.Data.Model.Interfaces
 {
     public class Proveedor : IBaseUsuario
     {
@@ -23,7 +22,5 @@ namespace SoGest.Data.Model.Entities
         public string Notas { get; set; }
         public DateTime? Aniversario { get; set; }
         public bool Activo { get; set; }
-    }
-
-  
+    }  
 }

@@ -2,7 +2,7 @@
 
 using System;
 
-namespace SoGest.Data.Model.Entities
+namespace SoGest.Data.Model.Interfaces
 {
     public class Cliente:IBaseUsuario
 

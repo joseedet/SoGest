@@ -8,5 +8,6 @@ namespace SoGest.Data.Interaces
        public  Task<List<T>> GetAsync();
 
         public T Add( T entity );
+        public Task  GetItem ( int id );
     }
 }

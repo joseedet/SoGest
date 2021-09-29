@@ -2,7 +2,7 @@
 
 namespace SoGest.Data.Model.Entities
 {
-    public class TipoDocumento : IBase
+    public class Almacen : IBase
     {
         public int Id { get; set; }
         public string Descripcion { get; set; }

@@ -1,10 +1,14 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
+using SoGest.Data.Repositories.Context;
 using SoGest.Infrasturcture.DependencyInjection;
+
+using System.Linq;
 
 namespace SoGest.UI
 {
@@ -30,6 +34,14 @@ namespace SoGest.UI
             if ( env.IsDevelopment( ) )
             {
                 app.UseDeveloperExceptionPage( );
+            }
+            using ( var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>( ).CreateScope( ) )
+            {
+                var context = serviceScope.ServiceProvider.GetRequiredService<SoGestDBContext>( );
+                if ( context.Database.GetPendingMigrations( ).Any( ) )
+                {
+                    context.Database.Migrate( );
+                }
             }
 
             app.UseRouting( );
