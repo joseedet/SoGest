@@ -1,0 +1,137 @@
+﻿@model IEnumerable<SoGest.Data.Model.Entities.Cliente>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Apellidos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoDocumentoId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RazonSocial)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Direccion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CodPostal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Poblacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Provincia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NombreContacto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ApellidoContacto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fijo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Movil)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Correo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Foto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Notas)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Aniversario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Activo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Documento)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Apellidos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoDocumentoId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RazonSocial)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Direccion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodPostal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Poblacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Provincia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NombreContacto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ApellidoContacto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fijo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Movil)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Correo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Foto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Notas)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Aniversario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Activo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Documento)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

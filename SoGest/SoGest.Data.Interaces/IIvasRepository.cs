@@ -4,5 +4,6 @@ namespace SoGest.Data.Interaces
 {
     public interface IIvasRepository:IGenericRepository<IVA>
     {
+
     }
 }

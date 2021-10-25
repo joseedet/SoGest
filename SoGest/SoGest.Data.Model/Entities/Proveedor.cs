@@ -1,7 +1,7 @@
 ﻿
 using System;
 
-namespace SoGest.Data.Model.Interfaces
+namespace SoGest.Data.Model.Entities
 {
     public class Proveedor : IBaseUsuario
     {

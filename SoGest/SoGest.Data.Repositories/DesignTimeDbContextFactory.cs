@@ -11,7 +11,7 @@ namespace SoGest.Data.Repositories
         {
             var builder = new DbContextOptionsBuilder<SoGestDBContext>( );
 
-            builder.UseSqlServer(@"Servere=MORFEO\\GHOST;Database=AdaiaCommerce;User id=sa Password=Adaia0311Edet;MultipleActiveResultSets=True;App=EntityFramework");
+            builder.UseSqlServer(@"Data Source=MORFEO\DESARROLLO;Initial Catalog=Commerce;Integrated Security=true;MultipleActiveResultSets=True");
 
             return new SoGestDBContext(builder.Options);
         }
