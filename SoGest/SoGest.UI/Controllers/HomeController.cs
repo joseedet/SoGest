@@ -1,21 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-
-using AplicacionComercial.Web.Models;
+﻿using System.Diagnostics;
 
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
-using SoGest.Data.Interaces;
-using SoGest.Data.Repositories.Context;
+using SoGest.UI.Models;
 
 namespace SoGest.UI.Controllers
 {
-    public class HomeController:Controller
+    public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
 

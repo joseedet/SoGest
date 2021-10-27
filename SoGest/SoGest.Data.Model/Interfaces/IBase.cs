@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SoGest.Data.Model.Interfaces
+﻿namespace SoGest.Data.Model.Interfaces
 {
     public interface IBase
     {

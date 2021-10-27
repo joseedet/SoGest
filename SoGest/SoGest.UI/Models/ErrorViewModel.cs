@@ -1,6 +1,6 @@
 using System;
 
-namespace AplicacionComercial.Web.Models
+namespace SoGest.UI.Models
 {
     public class ErrorViewModel
     {
