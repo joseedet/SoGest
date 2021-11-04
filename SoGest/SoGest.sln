@@ -21,11 +21,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoGest.Data.Model", "SoGest
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoGest.Data.Repositories", "SoGest.Data.Repositories\SoGest.Data.Repositories.csproj", "{F4EB3D6E-414F-43D0-B126-8884353C2F11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoGest.Business.Interfaces", "SoGest.Business.Interfaces\SoGest.Business.Interfaces.csproj", "{30F42605-1120-4C9B-B8BD-F7648FAD7E35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoGest.Business.Interfaces", "SoGest.Business.Interfaces\SoGest.Business.Interfaces.csproj", "{30F42605-1120-4C9B-B8BD-F7648FAD7E35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoGest.Business.Models", "SoGest.Business.Models\SoGest.Business.Models.csproj", "{EEFC9B16-B5E3-4C46-94CF-CE80B08554EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoGest.Business.Models", "SoGest.Business.Models\SoGest.Business.Models.csproj", "{EEFC9B16-B5E3-4C46-94CF-CE80B08554EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoGest.Business.Services", "SoGest.Business.Services\SoGest.Business.Services.csproj", "{15F2CDF2-396D-4665-B4B9-7CEEB8E9D816}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoGest.Business.Services", "SoGest.Business.Services\SoGest.Business.Services.csproj", "{15F2CDF2-396D-4665-B4B9-7CEEB8E9D816}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Windows", "Windows", "{9A93274B-A16F-4CFD-BB5D-4C069A11A960}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoGest.Win", "SoGest.Win\SoGest.Win.csproj", "{E49D6448-0EA3-4E8A-BD0F-3ACE0162038D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,6 +69,10 @@ Global
 		{15F2CDF2-396D-4665-B4B9-7CEEB8E9D816}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15F2CDF2-396D-4665-B4B9-7CEEB8E9D816}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15F2CDF2-396D-4665-B4B9-7CEEB8E9D816}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E49D6448-0EA3-4E8A-BD0F-3ACE0162038D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E49D6448-0EA3-4E8A-BD0F-3ACE0162038D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E49D6448-0EA3-4E8A-BD0F-3ACE0162038D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E49D6448-0EA3-4E8A-BD0F-3ACE0162038D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,6 +86,7 @@ Global
 		{30F42605-1120-4C9B-B8BD-F7648FAD7E35} = {80DA4AEC-3B47-4E45-A4FB-6EAB8725B442}
 		{EEFC9B16-B5E3-4C46-94CF-CE80B08554EA} = {80DA4AEC-3B47-4E45-A4FB-6EAB8725B442}
 		{15F2CDF2-396D-4665-B4B9-7CEEB8E9D816} = {80DA4AEC-3B47-4E45-A4FB-6EAB8725B442}
+		{E49D6448-0EA3-4E8A-BD0F-3ACE0162038D} = {9A93274B-A16F-4CFD-BB5D-4C069A11A960}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FA728AE3-990C-490F-85DE-1016F9325D36}

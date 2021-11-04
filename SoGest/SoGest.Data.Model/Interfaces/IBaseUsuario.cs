@@ -1,10 +1,12 @@
 ﻿using System;
 
+using SoGest.Data.Model.Interfaces;
+
 namespace SoGest.Data.Model
 {
-    public interface IBaseUsuario
+    public interface IBaseUsuario:IBaseEntity
     {
-        public int Id { get; set; }
+        //public int Id { get; set; }
         public int TipoDocumentoId { get; set; }
         public int Documento { get; set; }
         public string RazonSocial { get; set; }

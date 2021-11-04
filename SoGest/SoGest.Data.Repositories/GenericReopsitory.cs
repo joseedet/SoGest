@@ -1,13 +1,15 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
 using SoGest.Data.Interaces;
+using SoGest.Data.Model.Entities;
+using SoGest.Data.Model.Interfaces;
 
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace SoGest.Data.Repositories
 {
-    public class GenericReopsitory<T> : IGenericRepository<T> where T : class
+    public class GenericReopsitory<T> : IGenericRepository<T> where T : class,IBaseEntity
     {
         private ISoGestDbContext _dbContext;
         private DbSet<T> _dbSet;
@@ -37,7 +39,7 @@ namespace SoGest.Data.Repositories
             //return entry;
         }
 
-        public virtual  void DeleteAsync ( T entity )
+        public virtual void DeleteAsync ( T entity )
         {
             _dbSet.Remove(entity);
         }
@@ -73,10 +75,18 @@ namespace SoGest.Data.Repositories
             await _dbContext.SaveChangesAsync( );
         }
 
-        public virtual async Task GuardarCambiosAsync()
+        public virtual async Task GuardarCambiosAsync ()
         {
 
             await _dbContext.SaveChangesAsync( );
         }
-    }
+
+        public virtual async Task<bool> ExistAsync ( int id )
+        {
+            return await _dbContext.Set<T>( ).AnyAsync(e => e.Id == id);
+            //throw new System.NotImplementedException( );
+        }
+
+    }   
+        
 }

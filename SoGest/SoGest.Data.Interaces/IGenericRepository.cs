@@ -13,8 +13,8 @@ namespace SoGest.Data.Interaces
         public Task UpdateAsync ( T entity );
         public  void DeleteAsync ( T entity );
         public Task GuardarCambiosAsync ();
+        public Task<bool> ExistAsync ( int id );
 
-        
 
 
         //public bool Exist (T entity);
